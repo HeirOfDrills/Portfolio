@@ -9,30 +9,48 @@ header{
     top:0;
     padding-left: 15px;
     margin:0;
-    font-size: 20px;
+    height:110px;
 }
 /*Footer  fixed to bottom*/
 footer{
     position: fixed;
     bottom:0;
+    height:65px;
+    text-align:center;
 }
 /* Give the header and footer a solid deep purple bg and full width */
 header, footer{
    background-color:#381648;
    width:100%;
+   font-size: 18px;
+}
+/*Styling the different headers*/
+h1{
+    text-transform: uppercase;
+    font-family: 'Arial Black';
+    font-size:50px;
+    letter-spacing: 4px;
+    margin:0;    
+    margin-top:5px;
+}
+h2{
+    font-family: 'Verdana',serif;
+    margin:5px;    
 }
 
-/* Create the color template for the webpage */
+/* Create the baseline template for the webpage */
 body{
   /*  width: fit-content; /*I was Playing around with this for variable size*/
     margin:0;
     padding:0;
     /*This ensures the content is not hidden by the header*/
-    padding-top: 150px;
+    padding-top: 125px;
     /*Likewise, but for footer*/
-    padding-bottom: 150px;
+    padding-bottom: 125px;
     background-color: #7a468e;
     color: #d4c6ee;
+    font-family: arial,sans-serif;
+    font-size:16px;
 }
 /*Give main content some extra indentation*/
 main{
@@ -41,23 +59,34 @@ main{
 /*give the nav some margins all around*/
 nav{
     margin: 15px;
+    font-family: 'Trebuchet MS';
+    font-size:20px;
+    margin:0px;
+    margin-left: 5px;
+}
+/*footer needs a little more space for nav at top*/
+footer>nav{
+    margin:0;
+    margin-top:5px;
+    margin-bottom: 10px;
 }
 /* Make the nav space it's component's out */
 .nav-space{
-    margin-right: 25px; 
+    margin-right: 50px; 
 }
 
 /*Give the line breaks a slick cyan look, variable width with screen, and no margin to mimic the image old image border*/
 hr{
     margin: 0px 0px 0px 10px;
     border:4px solid #86fff5;
-    width:85%;
+    width:90%;
 }
 
 /*I would like to come back and make it so that we can Adjust the card size dynamically without breaking our lines.*/
 .card-window{
+    
     margin-left:10px;
-    width: 85%;
+    width: 90%;
     display: inline-block;
     border-right: 8px solid #86fff5;
     
@@ -70,7 +99,7 @@ hr{
     min-width: 200px;
     max-width: 400px;
     */
-    width:350px;
+    width:385px;
     border-right: 8px solid #86fff5;
     border-left: 8px solid #86fff5;
     display: block;
@@ -78,7 +107,7 @@ hr{
 }
 /*Ensures all the detail text within the card window is pre-padded to account for the image size*/
 .card-text{
-    padding-left:365px;
+    padding-left:390px;
     padding-right:15px;
 }
 
@@ -87,17 +116,16 @@ hr{
     text-align: center;
     background-color: #381648;
     margin:0;
-    padding:8px;
-}
-
-/*Give the header nav an additional left indent unique to it.*/
-.left-indent{
-    margin-left: 40px;
+    padding:10px;
+    text-transform: uppercase;
+    font-family: 'Arial Black';
+    font-size:30px;
+    letter-spacing: 2px;
 }
 
 /*Clean up indentation*/
 p{
-    margin-left: 15px;
+    margin-left:20px;
 }
 
 /*Make sure numbers and bullets are within the container and padded properly and indent them*/
@@ -108,18 +136,18 @@ li{
 }
 
 aside{
+    margin:15px;
     text-align: right;
+    font-family: courier;
+    float:bottom;
 }
 
-/*Make the footer distinct from the header*/
-footer{
-    text-align:center;
-}
 
 /*Fake trademark formatting*/
 .trademark{
     margin:0;
     margin-bottom: 5px;
+    font-size: 16px;
 }
 /* link pseudo classes */
 a:link    {color:#86fff5;}
