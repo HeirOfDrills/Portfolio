@@ -1,0 +1,133 @@
+/*
+We out here in the license-less wild wild web, bois!
+I know there are more efficient ways to do horizontal web design. I plan to revist this design once I have more experiance in such implemention. For now, It'll look fine as long as you don't play with the window size too much.
+Perhaps if I used the <hr> elements strictly semantically, I could just create containers with borders instead to get the same effect...*/
+
+/*header fixed to top*/
+header{
+    position:fixed;
+    top:0;
+    padding-left: 15px;
+    margin:0;
+    font-size: 20px;
+}
+/*Footer  fixed to bottom*/
+footer{
+    position: fixed;
+    bottom:0;
+}
+/* Give the header and footer a solid deep purple bg and full width */
+header, footer{
+   background-color:#381648;
+   width:100%;
+}
+
+/* Create the color template for the webpage */
+body{
+  /*  width: fit-content; /*I was Playing around with this for variable size*/
+    margin:0;
+    padding:0;
+    /*This ensures the content is not hidden by the header*/
+    padding-top: 150px;
+    /*Likewise, but for footer*/
+    padding-bottom: 150px;
+    background-color: #7a468e;
+    color: #d4c6ee;
+}
+/*Give main content some extra indentation*/
+main{
+    padding-left:15px;
+}
+/*give the nav some margins all around*/
+nav{
+    margin: 15px;
+}
+/* Make the nav space it's component's out */
+.nav-space{
+    margin-right: 25px; 
+}
+
+/*Give the line breaks a slick cyan look, variable width with screen, and no margin to mimic the image old image border*/
+hr{
+    margin: 0px 0px 0px 10px;
+    border:4px solid #86fff5;
+    width:85%;
+}
+
+/*I would like to come back and make it so that we can Adjust the card size dynamically without breaking our lines.*/
+.card-window{
+    margin-left:10px;
+    width: 85%;
+    display: inline-block;
+    border-right: 8px solid #86fff5;
+    
+}
+/*Give the image a left float, an added border*/
+/*I wish to revisit this as well and play with variable image size*/
+.headshot{
+    /*
+    width:30%;
+    min-width: 200px;
+    max-width: 400px;
+    */
+    width:350px;
+    border-right: 8px solid #86fff5;
+    border-left: 8px solid #86fff5;
+    display: block;
+    float:left;
+}
+/*Ensures all the detail text within the card window is pre-padded to account for the image size*/
+.card-text{
+    padding-left:365px;
+    padding-right:15px;
+}
+
+/*Formats the header within the card*/
+.card-head{
+    text-align: center;
+    background-color: #381648;
+    margin:0;
+    padding:8px;
+}
+
+/*Give the header nav an additional left indent unique to it.*/
+.left-indent{
+    margin-left: 40px;
+}
+
+/*Clean up indentation*/
+p{
+    margin-left: 15px;
+}
+
+/*Make sure numbers and bullets are within the container and padded properly and indent them*/
+li{
+    list-style-position: inside;
+    margin:5px;
+    
+}
+
+aside{
+    text-align: right;
+}
+
+/*Make the footer distinct from the header*/
+footer{
+    text-align:center;
+}
+
+/*Fake trademark formatting*/
+.trademark{
+    margin:0;
+    margin-bottom: 5px;
+}
+/* link pseudo classes */
+a:link    {color:#86fff5;}
+a:visited {color:#3c8790;}
+a:hover   {color:#ff8585;}
+a:active  {color:#a30021;}
+
+/* 
+    Created by Trevor Glascock on 5/1/21
+*/
+
