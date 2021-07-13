@@ -7,112 +7,60 @@ We out here in the license-less wild wild web, bois!
     <title>The Glascock's Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
-    <!-- Header with nav links -->
     <header>
-      <h1><strong>Portfolio</strong></h1>
-      <nav>
-        <a href="#intro" class="nav-space">Intro</a>
-        <a href="#about" class="nav-space">About</a>
-        <a href="#contact" class="nav-space">Contact</a>
+      <h1 class="title-text">Trevor Glascock</h1>
+      <nav class="nav-bar">
+        <ul id="head-menu" class="nav-menu">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <!--************  TO DO  ***************                
-        Assignment wise? Done! But we can definitely improve implementation and layout...               -->
 
-    <!-- Primary website content in body -->
     <main>
-      <!-- Intro Section -->
-      <section id="intro">
-        <h2><strong>Trevor Glascock</strong></h2>
-        <p>
-          <strong>Software Engineer</strong> in <strong>Houston, Texas</strong>.
-        </p>
-      </section>
-      <hr />
-
-      <!-- I want my headshot to be just below my intro, with my headshot to the left and my about info immediately to the right, formatted like an ID Card-->
-      <div class="card-window">
-        <!-- About Me -->
-        <article id="about">
+      <section id="about" class="info-card group">
+        <div class="info-img item">
           <img
-            class="headshot"
             src="images/glass.png"
-            alt="Fine Young Software Engineer, Trevor, assuming his professional alias of 'The Glascock' in the form of a parody of the Obama 'Change' politcal poster aptly titled 'Glass'."
+            alt="Stylized Purple-Toned headshot of Trevor Glascock: A Software Engineer."
+            class="info-img item"
           />
-          <h2 class="card-head"><strong>About Trevor</strong></h2>
-          <div class="card-text">
-            <p>
-              I have been fascinated by programming my entire life. I took
-              Computer Science for 3 years at <em>Katy High School</em> before
-              obtaining my <strong>Associates Degree</strong> at
-              <em>Houston Community College</em>. I attended
-              <em>University of Houston</em> for a few semesters, leaving to
-              attend urgent family matters.
-            </p>
-            <p>
-              I am incredibly sociable, and love working in teams. I have the
-              analytical skills necessary to delegate tasks into partitions, as
-              well as the self-awareness to know when to ask others for help.
-            </p>
-            <p>Languages I have the most experience with:</p>
-            <ol>
-              <li><strong>C++</strong></li>
-              <li><strong>Java</strong></li>
-              <li><strong>JavaScript</strong></li>
-            </ol>
-            <p>Other languages I have dabbled in:</p>
-            <ul>
-              <li><strong>Lua</strong></li>
-              <li><strong>Python</strong></li>
-              <li><strong>HTML</strong></li>
-              <li><strong>CSS</strong></li>
-              <li><strong>and PHP</strong></li>
-            </ul>
-            <p>
-              I am currently studying <strong>Japanese</strong>, and am an avid
-              fan of <strong>video games</strong>. I definitely fit the bill of
-              the nerd stereotype; Yes, I even play
-              <strong>Magic The Gathering!</strong>
-            </p>
-            <aside><small>Nice to Meet'cha~</small></aside>
-          </div>
-        </article>
-      </div>
-      <hr />
-
-      <!-- Contact -->
-      <section id="contact">
-        <h3>Contact me:</h3>
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/trevor-glascock-472061210/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/TrevorGlascock" target="_blank"
-              >GitHub</a
-            >
-          </li>
-          <li><a href="mailto:TrevorGlascock@gmail.com">Email</a></li>
-        </ul>
+        </div>
+        <div class="info-body item item-double">
+          <p>I am a Software Engineer.</p>
+        </div>
       </section>
     </main>
 
-    <!-- Footer with nav links -->
     <footer>
-      <nav>
-        <a href="#intro" class="nav-space">Intro</a>
-        <a href="#about" class="nav-space">About</a>
-        <a href="#contact" class="nav-space">Contact</a>
-        <a href="#top" class="nav-space">Return to Top</a>
+      <nav class="nav-bar">
+        <ul id="foot-menu" class="nav-menu">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#top" class="nav-link">Return to Top</a>
+          </li>
+        </ul>
       </nav>
       <h3 class="trademark">The Glascock™ - 2021</h3>
     </footer>

@@ -1,161 +1,132 @@
-/*
-We out here in the license-less wild wild web, bois!
-I know there are more efficient ways to do horizontal web design. I plan to revist this design once I have more experiance in such implemention. For now, It'll look fine as long as you don't play with the window size too much.
-Perhaps if I used the <hr> elements strictly semantically, I could just create containers with borders instead to get the same effect...*/
-
-/*header fixed to top*/
-header{
-    position:fixed;
-    top:0;
-    padding-left: 15px;
-    margin:0;
-    height:110px;
+/*Color Variables*/
+:root {
+  --primary-color-dark: #381648;
+  --primary-color: #7a468e;
+  --text-color-primary: #e0f7ff;
+  --text-color-secondary: #d4c6ee;
 }
-/*Footer  fixed to bottom*/
-footer{
-    position: fixed;
-    bottom:0;
-    height:65px;
-    text-align:center;
+/*Some defaults for the whole body*/
+body {
+  color: var(--text-color-primary);
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  font-size: 1rem;
+  width: fit-content;
 }
-/* Give the header and footer a solid deep purple bg and full width */
-header, footer{
-   background-color:#381648;
-   width:100%;
-   font-size: 18px;
-}
-/*Styling the different headers*/
-h1{
-    text-transform: uppercase;
-    font-family: 'Arial Black';
-    font-size:50px;
-    letter-spacing: 4px;
-    margin:0;    
-    margin-top:5px;
-}
-h2{
-    font-family: 'Verdana',serif;
-    margin:5px;    
+img {
+  width: 100%;
 }
 
-/* Create the baseline template for the webpage */
-body{
-  /*  width: fit-content; /*I was Playing around with this for variable size*/
-    margin:0;
-    padding:0;
-    /*This ensures the content is not hidden by the header*/
-    padding-top: 125px;
-    /*Likewise, but for footer*/
-    padding-bottom: 125px;
-    background-color: #7a468e;
-    color: #E0F7FF;
-    font-family: arial,sans-serif;
-    font-size:16px;
+/*Header & Footer*/
+header,
+footer {
+  background-color: var(--primary-color-dark);
 }
-/*Give main content some extra indentation*/
-main{
-    padding-left:15px;
+header {
+  margin-bottom: 3rem;
 }
-/*give the nav some margins all around*/
-nav{
-    margin: 15px;
-    font-family: 'Trebuchet MS';
-    font-size:20px;
-    margin:0px;
-    margin-left: 5px;
+.title-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding-top: 0.25rem;
+  font-size: 2.25rem;
+  font-family: "Times New Roman", Times, serif;
 }
-/*footer needs a little more space for nav at top*/
-footer>nav{
-    margin:0;
-    margin-top:5px;
-    margin-bottom: 10px;
-}
-/* Make the nav space it's component's out */
-.nav-space{
-    margin-right: 50px; 
+.trademark {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #65666a;
 }
 
-/*Give the line breaks a slick cyan look, variable width with screen, and no margin to mimic the image old image border*/
-hr{
-    margin: 0px 0px 0px 10px;
-    border:4px solid #86fff5;
-    width:95%;
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/*I would like to come back and make it so that we can Adjust the card size dynamically without breaking our lines.*/
-.card-window{
-    
-    margin-left:10px;
-    width: 95%;
-    display: inline-block;
-    border-right: 8px solid #86fff5;
-    
-}
-/*Give the image a left float, an added border*/
-/*I wish to revisit this as well and play with variable image size*/
-.headshot{
-    /*
-    width:30%;
-    min-width: 200px;
-    max-width: 400px;
-    */
-    width:400px;
-    border-right: 8px solid #86fff5;
-    border-left: 8px solid #86fff5;
-    display: block;
-    float:left;
-}
-/*Ensures all the detail text within the card window is pre-padded to account for the image size*/
-.card-text{
-    margin-left:410px;
+.nav-menu {
+  display: flex;
+  padding-left: 0;
+  margin: 0.75rem;
+  list-style: none;
 }
 
-/*Formats the header within the card*/
-.card-head{
-    text-align: center;
-    background-color: #381648;
-    margin:0;
-    padding:10px;
-    text-transform: uppercase;
-    font-family: 'Arial Black';
-    font-size:30px;
-    letter-spacing: 2px;
+.nav-link {
+  color: var(--text-color-primary);
+  text-decoration: none;
+  margin: 0 20px 0 0;
+  font-size: 1.25rem;
+  font-family: "Montserrat";
 }
 
-/*Clean up indentation*/
-p{
-    margin:15px;
-    margin-right:5px;
+.nav-item:last-child .nav-link {
+  margin-right: 0;
 }
 
-/*Make sure numbers and bullets are within the container and padded properly and indent them*/
-li{
-    list-style-position: inside;
-    margin:5px;
-    
+/*main*/
+main {
+  margin: 2rem;
 }
 
-aside{
-    margin:15px;
-    text-align: right;
-    font-family: courier;
-    float:bottom;
+.info-card {
+  border: #1cddff;
+  border-radius: 2rem;
+}
+.info-img {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.info-body {
+  display: flex;
+  justify-content: center;
 }
 
+/* ---  Flex Groups & Items --- */
 
-/*Fake trademark formatting*/
-.trademark{
-    margin:0;
-    margin-bottom: 5px;
-    font-size: 16px;
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/* link pseudo classes */
-a:link    {color:#86fff5;}
-a:visited {color:#3c8790;}
-a:hover   {color:#ff8585;}
-a:active  {color:#a30021;}
 
-/* 
-    Created by Trevor Glascock on 5/1/21
-*/
+.item {
+  flex: 1;
+  margin: 10px;
+}
 
+.item-double {
+  flex: 2;
+}
+
+/*  Media Breakpoints  */
+/*  Tablet/Desktop size */
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .title-text {
+    font-size: 3.5rem;
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  .nav-menu {
+    margin: 0.5rem;
+  }
+  .nav-link:hover {
+    color: var(--text-color-secondary);
+  }
+  .group {
+    flex-direction: row;
+  }
+}
