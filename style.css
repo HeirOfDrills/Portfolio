@@ -1,11 +1,11 @@
-/*Color Variables*/
+/*---------- Color Variables ----------*/
 :root {
   --primary-color-dark: #381648;
   --primary-color: #7a468e;
   --text-color-primary: #e0f7ff;
   --text-color-secondary: #d4c6ee;
 }
-/*Some defaults for the whole body*/
+/*---------- Default Styles ----------*/
 body {
   color: var(--text-color-primary);
   background-color: var(--primary-color);
@@ -15,14 +15,18 @@ body {
   font-size: 1rem;
   width: fit-content;
 }
-img {
-  width: 100%;
-}
 
-/*Header & Footer*/
+/*---------- Header & Footer ----------*/
 header,
 footer {
   background-color: var(--primary-color-dark);
+}
+.trademark {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: grey;
 }
 header {
   margin-bottom: 3rem;
@@ -36,27 +40,19 @@ header {
   font-size: 2.25rem;
   font-family: "Times New Roman", Times, serif;
 }
-.trademark {
-  margin: 0;
-  padding-bottom: 0.5rem;
-  text-align: center;
-  font-size: 1rem;
-  color: #65666a;
-}
 
+/*----- Navbar Classes -----*/
 .nav-bar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .nav-menu {
   display: flex;
   padding-left: 0;
   margin: 0.75rem;
   list-style: none;
 }
-
 .nav-link {
   color: var(--text-color-primary);
   text-decoration: none;
@@ -64,15 +60,11 @@ header {
   font-size: 1.25rem;
   font-family: "Montserrat";
 }
-
 .nav-item:last-child .nav-link {
   margin-right: 0;
 }
 
-/*main*/
-main {
-  margin: 2rem;
-}
+/*---------- Main Classes-----------*/
 
 .info-card {
   border: #1cddff;
@@ -88,7 +80,7 @@ main {
   justify-content: center;
 }
 
-/* ---  Flex Groups & Items --- */
+/* ---  Groups & Items --- */
 
 .group {
   display: flex;
