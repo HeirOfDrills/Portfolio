@@ -1,7 +1,10 @@
 import { Route, Switch } from "react-router-dom";
 import Header from "./Header";
-import NotFound from "./NotFound";
+import Footer from "./Footer";
+
 import HomePage from "../HomePage";
+
+import NotFound from "./NotFound";
 
 function Layout() {
   return (
@@ -15,7 +18,7 @@ function Layout() {
           <NotFound />
         </Switch>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
