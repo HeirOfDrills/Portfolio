@@ -5,9 +5,7 @@ export default function CardBody({ body }) {
       <div className="info-title ">
         <h2 className="">{title}</h2>
       </div>
-      <div className="info-text ">
-        <p className="">{text}</p>
-      </div>
+      <div className="info-text ">{text}</div>
     </div>
   );
 }

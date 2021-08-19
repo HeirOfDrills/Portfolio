@@ -1,5 +1,6 @@
 import CardBody from "./CardBody";
 import CardImage from "./CardImage";
+import "./index.css";
 
 export default function InfoCard({ card }) {
   const { type, image, body } = card;
