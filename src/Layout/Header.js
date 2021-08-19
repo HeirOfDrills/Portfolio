@@ -1,26 +1,14 @@
+import { useHistory } from "react-router-dom";
+import NavBar from "./NavBar";
+
 export default function Header() {
+  const history = useHistory();
   return (
     <header>
-      <h1 className="title-text">Trevor Glascock</h1>
-      <nav className="nav-bar">
-        <ul id="head-menu" className="nav-menu">
-          <li className="nav-item">
-            <a href="#about" className="nav-link">
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#portfolio" className="nav-link">
-              Portfolio
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#contact" className="nav-link">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <h1 className="title-text" onClick={() => history.push("/")}>
+        Trevor Glascock
+      </h1>
+      <NavBar type="header" />
     </header>
   );
 }
