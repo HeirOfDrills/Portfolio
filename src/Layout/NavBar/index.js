@@ -1,5 +1,6 @@
 import NavItem from "./NavItem";
 import ReturnToTop from "./ReturnToTop";
+import "./NavBar.css";
 
 export default function NavBar({ type }) {
   return (

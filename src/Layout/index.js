@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import HomePage from "../HomePage";
 import About from "../About";
 import NotFound from "./NotFound";
-import "./index.css";
+import "./Layout.css";
 import Portfolio from "../Portfolio";
 import Contact from "../Contact";
 
