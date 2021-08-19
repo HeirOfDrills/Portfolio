@@ -12,21 +12,11 @@ export default function Contact() {
       title: "Contact Me",
       text: (
         <>
-          <ul>
-            <li>
-              <a href="https://github.com/TrevorGlascock">GitHub</a>
-            </li>
-
-            <li>
-              <a href="https://www.linkedin.com/in/trevor-glascock/">
-                LinkedIn
-              </a>
-            </li>
-
-            <li>
-              <a href="mailto:TrevorGlascock@gmail.com">Email</a>
-            </li>
-          </ul>
+          <button href="https://github.com/TrevorGlascock">Github</button>
+          <button href="https://www.linkedin.com/in/trevor-glascock/">
+            LinkedIn
+          </button>
+          <button href="mailto:TrevorGlascock@gmail.com">Email</button>
         </>
       ),
     },

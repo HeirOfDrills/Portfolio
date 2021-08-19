@@ -31,16 +31,16 @@ h6 {
 }
 
 /*---------- Proxy Links ----------*/
-a:link {
+.link:link {
   color: var(--accent-color-primary);
 }
-a:visited {
+.link:visited {
   color: #86fff5;
 }
-a:hover {
+.link:hover {
   color: #ff8585;
 }
-a:active {
+.link:active {
   color: #a30021;
 }
 
@@ -71,36 +71,6 @@ footer {
   padding-top: 0.25rem;
   font-size: 2.25rem;
   font-family: "Times New Roman", Times, serif;
-}
-
-/*----- Navbar Classes -----*/
-.nav-bar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav-menu {
-  display: flex;
-  padding-left: 0;
-  margin: 0.75rem;
-  list-style: none;
-}
-.nav-link {
-  color: var(--text-color-primary);
-  text-decoration: none;
-  margin: 0 20px 0 0;
-  font-size: 1.25rem;
-  font-family: "Montserrat";
-}
-.nav-item:last-child .nav-link {
-  margin-right: 0;
-}
-
-.nav-link:link {
-  color: var(--text-color-primary);
-}
-.nav-link:hover {
-  color: var(--text-color-secondary);
 }
 
 /* -----  Flex Groups & Items ----- */
@@ -140,18 +110,5 @@ footer {
   }
   body {
     width: auto;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
-  }
-  .title-text {
-    font-size: 3.5rem;
-    margin: 14px 0;
-    padding-top: 0;
-  }
-  .nav-menu {
-    margin: 0.5rem;
   }
 }
