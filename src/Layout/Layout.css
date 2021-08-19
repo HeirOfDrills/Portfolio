@@ -5,6 +5,7 @@
   --text-color-primary: #e0f7ff;
   --text-color-secondary: #d4c6ee;
   --accent-color-primary: #1cddff;
+  --accent-color-light: #86fff5;
 }
 
 /*---------- Default Styles ----------*/
@@ -27,6 +28,20 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+/*---------- Proxy Links ----------*/
+.link:link {
+  color: var(--accent-color-primary);
+}
+.link:visited {
+  color: #86fff5;
+}
+.link:hover {
+  color: #ff8585;
+}
+.link:active {
+  color: #a30021;
 }
 
 /*---------- Header & Footer ----------*/
@@ -56,29 +71,6 @@ footer {
   padding-top: 0.25rem;
   font-size: 2.25rem;
   font-family: "Times New Roman", Times, serif;
-}
-
-/*----- Navbar Classes -----*/
-.nav-bar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav-menu {
-  display: flex;
-  padding-left: 0;
-  margin: 0.75rem;
-  list-style: none;
-}
-.nav-link {
-  color: var(--text-color-primary);
-  text-decoration: none;
-  margin: 0 20px 0 0;
-  font-size: 1.25rem;
-  font-family: "Montserrat";
-}
-.nav-item:last-child .nav-link {
-  margin-right: 0;
 }
 
 /* -----  Flex Groups & Items ----- */
@@ -118,21 +110,5 @@ footer {
   }
   body {
     width: auto;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
-  }
-  .title-text {
-    font-size: 3.5rem;
-    margin: 14px 0;
-    padding-top: 0;
-  }
-  .nav-menu {
-    margin: 0.5rem;
-  }
-  .nav-link:hover {
-    color: var(--text-color-secondary);
   }
 }
