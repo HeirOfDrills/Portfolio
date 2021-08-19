@@ -1,9 +1,8 @@
 import InfoCard from "../Common/InfoCard";
 import glass from "../images/glass.png";
-import "./index.css";
 
 export default function About() {
-  const infoCard = {
+  const aboutCard = {
     type: "about",
     image: {
       src: glass,
@@ -11,12 +10,16 @@ export default function About() {
     },
     body: {
       title: "About Trevor",
-      text: "I am a Software Engineer.",
+      text: (
+        <>
+          <p>I am a Software Engineer.</p>
+        </>
+      ),
     },
   };
   return (
     <main>
-      <InfoCard card={infoCard} />
+      <InfoCard card={aboutCard} />
     </main>
   );
 }
