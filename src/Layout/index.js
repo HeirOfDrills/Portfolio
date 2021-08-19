@@ -5,6 +5,8 @@ import HomePage from "../HomePage";
 import About from "../About";
 import NotFound from "./NotFound";
 import "./index.css";
+import Portfolio from "../Portfolio";
+import Contact from "../Contact";
 
 function Layout() {
   return (
@@ -17,6 +19,12 @@ function Layout() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
           <NotFound />
         </Switch>
