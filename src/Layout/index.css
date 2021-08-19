@@ -5,6 +5,7 @@
   --text-color-primary: #e0f7ff;
   --text-color-secondary: #d4c6ee;
   --accent-color-primary: #1cddff;
+  --accent-color-light: #86fff5;
 }
 
 /*---------- Default Styles ----------*/
@@ -27,6 +28,20 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+/*---------- Proxy Links ----------*/
+a:link {
+  color: var(--accent-color-primary);
+}
+a:visited {
+  color: #86fff5;
+}
+a:hover {
+  color: #ff8585;
+}
+a:active {
+  color: #a30021;
 }
 
 /*---------- Header & Footer ----------*/
@@ -81,6 +96,13 @@ footer {
   margin-right: 0;
 }
 
+.nav-link:link {
+  color: var(--text-color-primary);
+}
+.nav-link:hover {
+  color: var(--text-color-secondary);
+}
+
 /* -----  Flex Groups & Items ----- */
 .row {
   display: flex;
@@ -131,8 +153,5 @@ footer {
   }
   .nav-menu {
     margin: 0.5rem;
-  }
-  .nav-link:hover {
-    color: var(--text-color-secondary);
   }
 }
