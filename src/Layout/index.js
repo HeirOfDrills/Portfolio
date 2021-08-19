@@ -5,7 +5,6 @@ import HomePage from "../HomePage";
 import NotFound from "./NotFound";
 import "./index.css";
 
-
 function Layout() {
   return (
     <>
