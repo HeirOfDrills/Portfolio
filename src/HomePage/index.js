@@ -1,7 +1,13 @@
+import About from "../About";
+import Contact from "../Contact";
+import Portfolio from "../Portfolio";
+
 export default function HomePage() {
   return (
     <main>
-      <h1>Welcome to the HomePage!</h1>
+      <About />
+      <Portfolio />
+      <Contact />
     </main>
   );
 }
