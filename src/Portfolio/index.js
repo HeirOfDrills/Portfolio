@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ProjectList from "./ProjectList";
 import getProjects from "./Projects";
 
