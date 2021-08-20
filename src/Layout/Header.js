@@ -5,7 +5,7 @@ export default function Header() {
   const history = useHistory();
   return (
     <header>
-      <h1 className="title-text" onClick={() => history.push("/")}>
+      <h1 className="title-text clickable" onClick={() => history.push("/")}>
         Trevor Glascock
       </h1>
       <NavBar type="header" />

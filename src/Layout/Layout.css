@@ -31,17 +31,8 @@ h6 {
 }
 
 /*---------- Proxy Links ----------*/
-.link:link {
-  color: var(--accent-color-primary);
-}
-.link:visited {
-  color: #86fff5;
-}
-.link:hover {
-  color: #ff8585;
-}
-.link:active {
-  color: #a30021;
+.clickable {
+  cursor: pointer;
 }
 
 /*---------- Header & Footer ----------*/
