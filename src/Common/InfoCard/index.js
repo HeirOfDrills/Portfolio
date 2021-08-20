@@ -5,7 +5,10 @@ import "./InfoCard.css";
 export default function InfoCard({ card }) {
   const { type, image, body, flip = false } = card;
 
-  const content = [<CardImage image={image} />, <CardBody body={body} />];
+  const content = [
+    <CardImage key="card-image" image={image} />,
+    <CardBody key="card-body" body={body} />,
+  ];
 
   if (flip) content.push(content.shift()); //If it's a flipped card, the image happens after the body
 
