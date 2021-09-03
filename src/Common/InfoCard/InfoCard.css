@@ -4,13 +4,10 @@
   border-width: 0.4rem;
 }
 .info-card {
-  margin: 0 15%;
-}
-.info-body {
-  width: 100%;
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  justify-content: space-between;
+  margin: 0 10% 25% 10%;
 }
 .info-img {
   display: flex;
@@ -18,16 +15,19 @@
   justify-content: center;
   width: 100%;
 }
+
 .info-title {
   background-color: var(--primary-color-dark);
   width: 100%;
   text-align: center;
-  justify-self: flex-start;
-  flex: 1;
 }
 .info-text {
+  padding: 0.5rem;
+  text-align: center;
+}
+/* Undoes the 1:2 ratio for project Cards in favor of a 1:1 ratio instead*/
+.project .item-double {
   flex: 1;
-  align-self: center;
 }
 
 /*-------------------- Media Breakpoints --------------------*/
@@ -36,8 +36,19 @@
   .accent-border {
     border-style: solid;
   }
+  .info-card {
+    flex-direction: row;
+    margin: 0 10% 5% 10%;
+  }
   .info-img {
     border-style: none;
     border-right-style: solid;
+  }
+  .flipped {
+    flex-direction: row-reverse;
+  }
+  .flipped .info-img {
+    border-style: none;
+    border-left-style: solid;
   }
 }
