@@ -10,20 +10,18 @@ export default function InfoCard({ card }) {
     <CardBody key="card-body" body={body} />,
   ];
 
-  let className = `info-card accent-border`;
-  if (flip) {
-    content.push(content.shift()); // If it's a flipped card, the image happens after the body
-    className += ` flipped`; // and add the flipped class
-  }
+  // All cards have these basic CSS rules
+  let styles = `info-card accent-border`;
 
-  // This allows us to make sure that project cards have a 1:1 flex layout instead of the 1:2 of other cards
-  if (type.includes("project")) {
-    className += ` project`;
-  }
+  // Adds the flipped class and lets flexbox handle content mirroring
+  if (flip) styles += ` flipped`;
+
+  // if it's a project card, it has different CSS display rules
+  if (type.includes("project")) styles += ` project`;
 
   return (
     <section id={type} className="">
-      <div className={className}>{content}</div>
+      <div className={styles}>{content}</div>
     </section>
   );
 }
