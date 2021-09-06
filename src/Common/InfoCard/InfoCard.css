@@ -9,6 +9,8 @@
   flex-direction: column;
   margin: 0 10% 25% 10%;
   border-style: solid;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .info-img {
   display: flex;
