@@ -17,11 +17,15 @@ export default function ProjectListItem({ project }) {
     image: {
       src: project_screenshot,
       alt: project_description,
+      href: frontend_deploy ? frontend_deploy : backend_deploy, // href will be frontend_deploy if it exists, otherwise it is backend_deploy or null;
     },
     body: {
       title: project_title,
       text: project_description,
+      frontend_repo,
+      backend_repo,
     },
+    flip: project_id % 2,
   };
 
   return <InfoCard card={projectCard} />;

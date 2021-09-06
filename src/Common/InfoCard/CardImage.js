@@ -1,8 +1,21 @@
 export default function CardImage({ image }) {
-  const { src, alt } = image;
+  const { src, alt, href } = image;
+
+  let divClasses = "info-img accent-border item";
+  if (href) divClasses += " deploy-wrap";
+
+  const deployText = href ? (
+    <div className="deploy-screen">
+      <div className="deploy-text">Click to View Deployment!</div>
+    </div>
+  ) : null;
+
   return (
-    <div className="info-img accent-border item">
-      <img src={src} alt={alt} />
+    <div className={divClasses}>
+      <a href={href}>
+        <img src={src} alt={alt} />
+        {deployText}
+      </a>
     </div>
   );
 }

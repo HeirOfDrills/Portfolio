@@ -6,13 +6,19 @@
 .info-card {
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: column-reverse;
   margin: 0 10% 25% 10%;
+  border-style: solid;
 }
 .info-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  border-top-style: solid;
+}
+
+.info-body {
   width: 100%;
 }
 
@@ -28,6 +34,37 @@
 /* Undoes the 1:2 ratio for project Cards in favor of a 1:1 ratio instead*/
 .project .item-double {
   flex: 1;
+}
+
+.deploy-screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: #1cddffa6;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.deploy-text {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+  color: #fff;
+}
+.deploy-wrap {
+  position: relative;
+}
+
+.deploy-wrap:hover .deploy-screen {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*-------------------- Media Breakpoints --------------------*/
