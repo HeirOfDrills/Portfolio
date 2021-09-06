@@ -5,7 +5,9 @@ export default function CardImage({ image }) {
   if (href) divClasses += " deploy-wrap";
 
   const deployText = href ? (
-    <div className="deploy-text">Click to View Deployment!</div>
+    <div className="deploy-screen">
+      <div className="deploy-text">Click to View Deployment!</div>
+    </div>
   ) : null;
 
   return (
