@@ -11,11 +11,9 @@ export default function CardImage({ image }) {
   ) : null;
 
   return (
-    <div className={divClasses}>
-      <a href={href}>
-        <img src={src} alt={alt} />
-        {deployText}
-      </a>
-    </div>
+    <a href={href} className={divClasses}>
+      <img src={src} alt={alt} />
+      {deployText}
+    </a>
   );
 }
