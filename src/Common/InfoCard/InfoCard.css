@@ -47,7 +47,7 @@
   background: #1cddffa6;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 0.3s, visibility 0.3s, background-color 0.175s;
 }
 .deploy-text {
   position: absolute;
@@ -99,5 +99,11 @@ a:active {
   .flipped .info-img {
     border-style: none;
     border-left-style: solid;
+  }
+
+  .deploy-wrap:active .deploy-screen {
+    background: #e40066a6;
+    visibility: visible;
+    opacity: 1;
   }
 }
