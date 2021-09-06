@@ -22,7 +22,7 @@ export default function CardBody({ body }) {
         <h2 className="">{title}</h2>
       </div>
       <div className="info-text ">
-        <p>{text}</p>
+        {text}
         {links}
       </div>
     </div>
