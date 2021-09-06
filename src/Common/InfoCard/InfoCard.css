@@ -57,7 +57,7 @@
   right: 0;
 
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 .deploy-wrap {
   position: relative;
@@ -66,6 +66,17 @@
 .deploy-wrap:hover .deploy-screen {
   visibility: visible;
   opacity: 1;
+}
+
+a:link,
+a:visited {
+  color: #ffffff;
+}
+a:hover {
+  color: var(--accent-color-primary);
+}
+a:active {
+  color: var(--contrast-color-primary);
 }
 
 /*-------------------- Media Breakpoints --------------------*/
