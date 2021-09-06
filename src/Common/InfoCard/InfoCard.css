@@ -16,6 +16,10 @@
   width: 100%;
 }
 
+.info-body {
+  width: 100%;
+}
+
 .info-title {
   background-color: var(--primary-color-dark);
   width: 100%;
