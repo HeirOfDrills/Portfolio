@@ -6,14 +6,16 @@
 .info-card {
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: column-reverse;
   margin: 0 10% 25% 10%;
+  border-style: solid;
 }
 .info-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  border-top-style: solid;
 }
 
 .info-body {
