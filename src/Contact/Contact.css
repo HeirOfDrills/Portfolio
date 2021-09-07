@@ -37,3 +37,35 @@ a:active .logo-sub-text {
     margin-bottom: 1.75rem;
   }
 }
+/*--- 2K+ Widths ---*/
+@media all and (min-width: 1570px) {
+  .svg-inline--fa {
+    font-size: 4rem;
+  }
+  .logo-text {
+    font-size: 4rem;
+    margin: 0 1.5rem;
+  }
+  .logo-sub-text {
+    font-size: 2rem;
+  }
+  .social-line {
+    margin-bottom: 2rem;
+  }
+}
+/*--- 4K+ Widths ---*/
+@media all and (min-width: 2560) {
+  .svg-inline--fa {
+    font-size: 6rem;
+  }
+  .logo-text {
+    font-size: 6rem;
+    margin: 0 1.75rem;
+  }
+  .logo-sub-text {
+    font-size: 2.5rem;
+  }
+  .social-line {
+    margin-bottom: 2.5rem;
+  }
+}
