@@ -78,6 +78,7 @@ a:active {
 
 /*-------------------- Media Breakpoints --------------------*/
 /*--- Tablet Layout ---*/
+/* TODO: Make this layout a two column version of the mobile view*/
 @media all and (min-width: 700px) {
   .info-card {
     margin: 0 10% 5% 10%;
@@ -91,7 +92,7 @@ a:active {
 }
 
 /*--- Desktop layout ---*/
-@media all and (min-width: 1100px) {
+@media all and (min-width: 1250px) {
   .accent-border {
     border-style: solid;
   }
