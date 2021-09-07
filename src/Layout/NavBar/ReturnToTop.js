@@ -8,9 +8,9 @@ function scrollToTop() {
 export default function NavItem({ type = "header" }) {
   return type === "footer" ? (
     <li className="nav-item">
-      <p className="nav-link clickable" onClick={() => scrollToTop()}>
+      <span className="nav-link clickable" onClick={() => scrollToTop()}>
         Return to Top
-      </p>
+      </span>
     </li>
   ) : null;
 }
