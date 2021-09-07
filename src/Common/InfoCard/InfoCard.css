@@ -32,10 +32,6 @@
   padding: 0.5rem;
   text-align: center;
 }
-/* Undoes the 1:2 ratio for project Cards in favor of a 1:1 ratio instead*/
-.project .item-double {
-  flex: 1;
-}
 
 .deploy-screen {
   position: absolute;
