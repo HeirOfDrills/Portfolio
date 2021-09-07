@@ -1,9 +1,9 @@
 import ProjectList from "./ProjectList";
 
-export default function Portfolio() {
+export default function Portfolio({ projects }) {
   return (
     <main>
-      <ProjectList />
+      <ProjectList projects={projects} />
     </main>
   );
 }
