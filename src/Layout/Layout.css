@@ -55,6 +55,9 @@ a:active {
 .clickable {
   cursor: pointer;
 }
+.clickable:hover {
+  color: var(--text-color-secondary);
+}
 
 /* -----  Flex classes ----- */
 .flex-single {
