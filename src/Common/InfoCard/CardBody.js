@@ -20,13 +20,22 @@ export default function CardBody({ body }) {
   if (!links.length) divClasses += " flex-double";
   else divClasses += " flex-single";
 
+  // If text isn't an object, map through each line of text as it's own paragraph
+  const textLines =
+    typeof text !== "object"
+      ? text.split("\n").map((line, key) => {
+          return <p key={key}>{line}</p>;
+        })
+      : // If it is an object, then we will assume it is already JSX
+        text;
+
   return (
     <div className={divClasses}>
       <div className="info-title">
         <h2 className="">{title}</h2>
       </div>
       <div className="info-text ">
-        {text}
+        {textLines}
         {links}
       </div>
     </div>
