@@ -71,12 +71,6 @@ a:active {
 /*-------------------- Media Breakpoints --------------------*/
 /*--- Tablet/Desktop size ---*/
 @media all and (min-width: 700px) {
-  .group {
-    flex-direction: row;
-  }
-  .column {
-    flex: 1;
-  }
   body {
     width: auto;
   }
