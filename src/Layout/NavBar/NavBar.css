@@ -46,6 +46,9 @@ footer {
   text-align: center;
   align-self: center;
 }
+.nav-link:visited {
+  color: var(--text-color-primary);
+}
 .nav-item:last-child .nav-link {
   margin-right: 0;
 }
