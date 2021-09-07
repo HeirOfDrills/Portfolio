@@ -1,7 +1,4 @@
-export default function LoadingMessage({ itemToLoad }) {
-  return (
-    <div className="buffer-circle">
-      <span className="">Now Loading {itemToLoad}...</span>
-    </div>
-  );
+import "./LoadingMessage.css";
+export default function LoadingMessage({ itemToLoad = null }) {
+  return <p className="loader">Now Loading {itemToLoad}...</p>;
 }
