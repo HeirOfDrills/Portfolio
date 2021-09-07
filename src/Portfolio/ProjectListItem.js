@@ -21,7 +21,7 @@ export default function ProjectListItem({ project }) {
     },
     body: {
       title: project_title,
-      text: <p>{project_description}</p>,
+      text: project_description,
       frontend_repo,
       backend_repo,
     },
