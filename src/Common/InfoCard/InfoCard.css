@@ -53,7 +53,7 @@
   right: 0;
 
   text-align: center;
-  color: #ffffff;
+  color: var(--primary-color-dark);
 }
 .deploy-wrap {
   position: relative;
@@ -76,14 +76,27 @@ a:active {
 }
 
 /*-------------------- Media Breakpoints --------------------*/
-/*--- Tablet/Desktop size ---*/
+/*--- Tablet Layout ---*/
 @media all and (min-width: 700px) {
+  .info-card {
+    margin: 0 10% 5% 10%;
+  }
+
+  .deploy-wrap:active .deploy-screen {
+    background: #e40066a6;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/*--- Desktop layout ---*/
+@media all and (min-width: 1100px) {
   .accent-border {
     border-style: solid;
   }
   .info-card {
     flex-direction: row;
-    margin: 0 10% 5% 10%;
+    margin: 0 10% 4% 10%;
   }
   .info-img {
     border-style: none;
@@ -95,11 +108,5 @@ a:active {
   .flipped .info-img {
     border-style: none;
     border-left-style: solid;
-  }
-
-  .deploy-wrap:active .deploy-screen {
-    background: #e40066a6;
-    visibility: visible;
-    opacity: 1;
   }
 }
