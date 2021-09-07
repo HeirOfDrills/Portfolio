@@ -16,9 +16,13 @@ export default function CardBody({ body }) {
       </p>
     );
 
+  let divClasses = "info-body";
+  if (!links.length) divClasses += " flex-double";
+  else divClasses += " flex-single";
+
   return (
-    <div className="info-body item-double">
-      <div className="info-title ">
+    <div className={divClasses}>
+      <div className="info-title">
         <h2 className="">{title}</h2>
       </div>
       <div className="info-text ">
