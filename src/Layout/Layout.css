@@ -31,6 +31,18 @@ h6 {
   margin: 0;
 }
 
+/*---------- Default Link Styles ----------*/
+a:link,
+a:visited {
+  color: #ffffff;
+}
+a:hover {
+  color: var(--accent-color-primary);
+}
+a:active {
+  color: var(--contrast-color-primary);
+}
+
 /*---------- Proxy Links ----------*/
 .clickable {
   cursor: pointer;
