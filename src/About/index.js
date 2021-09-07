@@ -41,12 +41,13 @@ export default function About() {
           </p>
           <hr />
           <p>
-            Please feel free to navigate to my <Link>Portfolio</Link> to see my
-            recent body of work.
+            Please feel free to navigate to my{" "}
+            <Link to="/portfolio">Portfolio</Link> to see my recent body of
+            work.
           </p>
           <p>
-            Alternatively, mosey on over to my <Link>Contact</Link> page if you
-            wish to reach me!
+            Alternatively, mosey on over to my{" "}
+            <Link to="/contact">Contact</Link> page if you wish to reach me!
           </p>
         </>
       ),
