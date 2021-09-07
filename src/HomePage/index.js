@@ -2,11 +2,11 @@ import About from "../About";
 import Contact from "../Contact";
 import Portfolio from "../Portfolio";
 
-export default function HomePage() {
+export default function HomePage({ projects }) {
   return (
     <main>
       <About />
-      <Portfolio />
+      <Portfolio projects={projects} />
       <Contact />
     </main>
   );
