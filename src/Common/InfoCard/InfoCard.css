@@ -51,9 +51,10 @@
   bottom: 0;
   left: 0;
   right: 0;
-
   text-align: center;
-  color: var(--primary-color-dark);
+  color: #ffffff;
+  font-size: 150%;
+  text-shadow: 2px 0px 3px var(--primary-color-dark);
 }
 .deploy-wrap {
   position: relative;
