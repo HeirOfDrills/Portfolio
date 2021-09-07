@@ -6,16 +6,17 @@
 .info-card {
   display: flex;
   align-items: flex-start;
-  flex-direction: column-reverse;
-  margin: 0 10% 25% 10%;
+  flex-direction: column;
+  margin: 0 15% 15% 15%;
   border-style: solid;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .info-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  border-top-style: solid;
 }
 
 .info-body {
@@ -31,10 +32,6 @@
   padding: 0.5rem;
   text-align: center;
 }
-/* Undoes the 1:2 ratio for project Cards in favor of a 1:1 ratio instead*/
-.project .item-double {
-  flex: 1;
-}
 
 .deploy-screen {
   position: absolute;
@@ -46,7 +43,7 @@
   background: #1cddffa6;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 0.3s, visibility 0.3s, background-color 0.175s;
 }
 .deploy-text {
   position: absolute;
@@ -54,9 +51,10 @@
   bottom: 0;
   left: 0;
   right: 0;
-
   text-align: center;
-  color: #fff;
+  color: #ffffff;
+  font-size: 150%;
+  text-shadow: 2px 0px 3px var(--primary-color-dark);
 }
 .deploy-wrap {
   position: relative;
@@ -67,15 +65,40 @@
   opacity: 1;
 }
 
+a:link,
+a:visited {
+  color: #ffffff;
+}
+a:hover {
+  color: var(--accent-color-primary);
+}
+a:active {
+  color: var(--contrast-color-primary);
+}
+
 /*-------------------- Media Breakpoints --------------------*/
-/*--- Tablet/Desktop size ---*/
+/*--- Tablet Layout ---*/
+/* TODO: Make this layout a two column version of the mobile view*/
 @media all and (min-width: 700px) {
+  .info-card {
+    margin: 0 10% 5% 10%;
+  }
+
+  .deploy-wrap:active .deploy-screen {
+    background: #e40066a6;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/*--- Desktop layout ---*/
+@media all and (min-width: 1250px) {
   .accent-border {
     border-style: solid;
   }
   .info-card {
     flex-direction: row;
-    margin: 0 10% 5% 10%;
+    margin: 0 10% 4% 10%;
   }
   .info-img {
     border-style: none;
