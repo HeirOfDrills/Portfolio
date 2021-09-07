@@ -1,3 +1,30 @@
+/*---------- Header & Footer ----------*/
+header,
+footer {
+  background-color: var(--primary-color-dark);
+}
+header {
+  margin-bottom: 2rem;
+}
+footer {
+  margin-top: 2rem;
+}
+
+.trademark {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: grey;
+}
+.title-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  font-size: 3.25rem;
+  font-family: "Times New Roman", Times, serif;
+}
 /*----- Navbar Classes -----*/
 .nav-bar {
   display: flex;
@@ -13,10 +40,11 @@
 .nav-link {
   color: var(--text-color-primary);
   text-decoration: none;
-  margin: 0 20px 0 0;
-  font-size: 1.25rem;
+  margin: 0 1.25rem 0 0;
+  font-size: 1.35rem;
   font-family: "Montserrat";
   text-align: center;
+  align-self: center;
 }
 .nav-item:last-child .nav-link {
   margin-right: 0;
@@ -31,14 +59,13 @@
   header {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 1rem;
   }
   .title-text {
-    font-size: 3.5rem;
-    margin: 14px 0;
+    font-size: 3.4rem;
     padding-top: 0;
   }
   .nav-menu {
-    margin: 0.5rem;
+    padding: 0.75rem 0;
   }
 }

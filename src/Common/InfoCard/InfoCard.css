@@ -65,17 +65,6 @@
   opacity: 1;
 }
 
-a:link,
-a:visited {
-  color: #ffffff;
-}
-a:hover {
-  color: var(--accent-color-primary);
-}
-a:active {
-  color: var(--contrast-color-primary);
-}
-
 /*-------------------- Media Breakpoints --------------------*/
 /*--- Tablet Layout ---*/
 /* TODO: Make this layout a two column version of the mobile view*/

@@ -16,7 +16,7 @@ export default function ProjectListItem({ project }) {
     type: `project${project_id}`,
     image: {
       src: project_screenshot,
-      alt: project_description,
+      alt: project_description.split("\n")[0],
       href: frontend_deploy ? frontend_deploy : backend_deploy, // href will be frontend_deploy if it exists, otherwise it is backend_deploy or null;
     },
     body: {
