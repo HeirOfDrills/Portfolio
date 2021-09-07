@@ -31,6 +31,14 @@ h6 {
   margin: 0;
 }
 
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin: 0.65rem;
+}
+
 /*---------- Default Link Styles ----------*/
 a:link,
 a:visited {
@@ -46,35 +54,6 @@ a:active {
 /*---------- Proxy Links ----------*/
 .clickable {
   cursor: pointer;
-}
-
-/*---------- Header & Footer ----------*/
-header,
-footer {
-  background-color: var(--primary-color-dark);
-}
-header {
-  margin-bottom: 2rem;
-}
-footer {
-  margin-top: 2rem;
-}
-
-.trademark {
-  margin: 0;
-  padding-bottom: 0.5rem;
-  text-align: center;
-  font-size: 1rem;
-  color: grey;
-}
-.title-text {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 0;
-  padding-top: 0.25rem;
-  font-size: 2.25rem;
-  font-family: "Times New Roman", Times, serif;
 }
 
 /* -----  Flex classes ----- */
