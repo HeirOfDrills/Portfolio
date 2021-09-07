@@ -10,7 +10,7 @@ export default function ProjectList({ projects }) {
     <main>{projectCards}</main>
   ) : (
     <main>
-      <LoadingMessage />
+      <LoadingMessage itemToLoad="Projects" />
     </main>
   );
 }
