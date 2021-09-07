@@ -1,20 +1,16 @@
-import { useEffect, useState } from "react";
-import { listProjects } from "../utils/api";
+import LoadingMessage from "../Common/LoadingMessage";
 import ProjectListItem from "./ProjectListItem";
 
-export default function ProjectList() {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    const ctrl = new AbortController();
-    listProjects(ctrl.signal).then(setProjects).catch(console.error);
-
-    return () => ctrl.abort();
-  }, []);
-
+export default function ProjectList({ projects }) {
   const projectCards = projects.map((project) => (
     <ProjectListItem key={project.project_id} project={project} />
   ));
 
-  return <main>{projectCards}</main>;
+  return projects.length ? (
+    <main>{projectCards}</main>
+  ) : (
+    <main>
+      <LoadingMessage />
+    </main>
+  );
 }
