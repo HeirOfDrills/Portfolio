@@ -1,7 +1,7 @@
-export default function LoadingMessage() {
+export default function LoadingMessage({ itemToLoad }) {
   return (
-    <div className="">
-      <span className="">Now Loading...</span>
+    <div className="buffer-circle">
+      <span className="">Now Loading {itemToLoad}...</span>
     </div>
   );
 }
