@@ -57,12 +57,12 @@ footer {
 }
 
 /*-------------------- Media Breakpoints --------------------*/
-/*--- Tablet/Desktop size ---*/
+/*--- Tablet size ---*/
 @media all and (min-width: 700px) {
   header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 3%;
   }
   .title-text {
     font-size: 3.4rem;
@@ -70,5 +70,43 @@ footer {
   }
   .nav-menu {
     padding: 0.75rem 0;
+  }
+}
+
+/*--- Desktop layout ---*/
+@media all and (min-width: 1250px) {
+  header {
+    padding: 1.25rem 5%;
+  }
+}
+/*--- 2K+ Widths ---*/
+@media all and (min-width: 1570px) {
+  header {
+    padding: 1.25rem 5%;
+  }
+  .title-text {
+    font-size: 4.5rem;
+  }
+  .nav-menu {
+    padding: 1rem 0;
+  }
+  .nav-link {
+    font-size: 1.75rem;
+  }
+}
+
+/* --- 4K+ Widths --- */
+@media all and (min-width: 2560px) {
+  header {
+    padding: 1.5rem 5%;
+  }
+  .title-text {
+    font-size: 5rem;
+  }
+  .nav-menu {
+    padding: 1.25rem;
+  }
+  .nav-link {
+    font-size: 2rem;
   }
 }
