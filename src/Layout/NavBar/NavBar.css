@@ -59,7 +59,7 @@ footer {
   header {
     display: flex;
     justify-content: space-between;
-    padding: 1.6rem;
+    padding: 1rem;
   }
   .title-text {
     font-size: 3.4rem;
