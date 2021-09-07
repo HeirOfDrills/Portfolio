@@ -1,13 +1,28 @@
 # Portfolio
-This is Trevor Glascock's Prototype portfolio. It is a very early WIP, before being redesigned to be project-facing and mobile-first.
+This is Trevor Glascock's Prototype portfolio. It is still somewhat of a WIP. [The contents of the Projects in this portfolio are actually being handled entirely by an Express api on the backend.](https://github.com/TrevorGlascock/Portfolio-Backend) The front-end styling still has a few revisions to go through, and the backend also requires more of my portfolio to be logged into the database. 
+
+## Deployments
+- [Backend Deployment](https://theglascockprojects.herokuapp.com/projects)
+- [Frontend Staging Deployment](https://theglascock.herokuapp.com/)
+- [Frontend Production Deployment](https://theglascock.com/)
 
 ## Current State
-Early React App currently in development
+- [First Working Prototype deployed!](https://theglascock.herokuapp.com/)
+- Placeholder information has been replaced with meaningful data.
+- Successfully connected to a backend Express API and PostgreSQL database.
+- Added many stylistic CSS touches all without using any libraries: 
+  - Rounded, reversable, modular card components
+  - Animated overlays that link to each project's deployment 
+  - Buffering Animation that plays while waiting for the API call
+  - Color scheme is on brand and consistent
+- Makes API call once on load, then as the user navigates through front-end routes, the data is just passed down through props to increase efficiency.
+- Whenever a change needs to be made to the content of my portfolio, it can be handled on the backend without redepoloying or even touching the frontend.
 
 
 ### **`Todo:`**
-- Redesign the app in React to allow for front-end routing, and highly modular components for easy maintanence.
-- Follow Mobile-First Design principals.
-- Ensure the Portfolio is responsive on all user devices.
-- Ensure that the Portfolio displays my most current and proud displays of work.
-- Possibly add additional flair and styling to make the portfolio appear more robust
+- Create a more modern, multi-column design to display portfolio information better for desktop users.
+- Improve overall responsiveness.
+- Add more of my work to the Backend Database.
+- Potentially make the contact and about me information also pull from a database.
+- Add a "Skills" section to the portfolio.
+- Take criticism and iterate further!
