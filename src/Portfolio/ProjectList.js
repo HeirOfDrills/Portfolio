@@ -7,10 +7,8 @@ export default function ProjectList({ projects }) {
   ));
 
   return projects.length ? (
-    <main>{projectCards}</main>
+    { projectCards }
   ) : (
-    <main>
-      <LoadingMessage itemToLoad="Projects" />
-    </main>
+    <LoadingMessage itemToLoad="Projects" />
   );
 }
