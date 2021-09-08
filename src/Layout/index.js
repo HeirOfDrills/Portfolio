@@ -22,8 +22,8 @@ function Layout() {
   return (
     <>
       <Header />
-      <div className="container">
-        <main>
+      <main>
+        <div className="container">
           <Switch>
             <Route exact path="/">
               <HomePage projects={projects} />
@@ -39,8 +39,8 @@ function Layout() {
             </Route>
             <NotFound />
           </Switch>
-        </main>
-      </div>
+        </div>
+      </main>
       <Footer />
     </>
   );
