@@ -59,9 +59,5 @@ export default function Contact() {
       ),
     },
   };
-  return (
-    <main>
-      <InfoCard card={contactCard} />
-    </main>
-  );
+  return <InfoCard card={contactCard} />;
 }

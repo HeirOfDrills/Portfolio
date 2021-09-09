@@ -15,7 +15,7 @@ footer {
   padding-bottom: 0.5rem;
   text-align: center;
   font-size: 1rem;
-  color: grey;
+  color: var(--text-color-primary);
 }
 .title-text {
   display: flex;

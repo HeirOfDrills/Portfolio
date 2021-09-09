@@ -53,9 +53,5 @@ export default function About() {
       ),
     },
   };
-  return (
-    <main>
-      <InfoCard card={aboutCard} />
-    </main>
-  );
+  return <InfoCard card={aboutCard} />;
 }

@@ -22,23 +22,25 @@ function Layout() {
   return (
     <>
       <Header />
-      <div className="container">
-        <Switch>
-          <Route exact path="/">
-            <HomePage projects={projects} />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/portfolio">
-            <Portfolio projects={projects} />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <NotFound />
-        </Switch>
-      </div>
+      <main>
+        <div className="container">
+          <Switch>
+            <Route exact path="/">
+              <HomePage projects={projects} />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/portfolio">
+              <Portfolio projects={projects} />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <NotFound />
+          </Switch>
+        </div>
+      </main>
       <Footer />
     </>
   );
