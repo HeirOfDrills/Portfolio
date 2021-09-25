@@ -42,8 +42,8 @@ export default function About() {
             work.
           </p>
           <p>
-            Alternatively, mosey on over to my{" "}
-            <Link to="/contact">Contact</Link> page if you wish to reach me!
+            Alternatively, you may direct yourself to my{" "}
+            <Link to="/contact">Contact</Link> page if you wish to reach me directly.
           </p>
         </>
       ),
