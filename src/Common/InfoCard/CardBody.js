@@ -34,9 +34,11 @@ export default function CardBody({ body }) {
       <div className="info-title">
         <h2 className="">{title}</h2>
       </div>
-      <div className="info-text ">
-        {textLines}
-        {links}
+      <div className="info-text-wrapper">
+        <div className="info-text ">
+          {textLines}
+          {links}
+        </div>
       </div>
     </div>
   );
