@@ -34,9 +34,15 @@ footer {
 .nav-menu {
   display: flex;
   padding-left: 0;
-  margin: 0.75rem;
+  padding: 1rem;
   list-style: none;
+  align-items: center;
 }
+
+.nav-bar ul {
+  margin: 0;
+}
+
 .nav-link {
   color: var(--text-color-primary);
   text-decoration: none;
