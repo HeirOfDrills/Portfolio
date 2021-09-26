@@ -20,32 +20,31 @@ export default function Contact() {
       title: "Contact Me",
       text: (
         <>
-          <p className="social-line">
-            <a href="https://github.com/TrevorGlascock">
+          <a href="https://github.com/TrevorGlascock">
+            <p className="social-line">
               <FontAwesomeIcon icon={faGithub} />
               <span className="logo-text">Github</span>
               <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </p>
+            </p>
+          </a>
 
-          <p className="social-line">
-            <a href="https://www.linkedin.com/in/trevor-glascock/">
+          <a href="https://www.linkedin.com/in/trevor-glascock/">
+            <p className="social-line">
               <FontAwesomeIcon icon={faLinkedin} />
               <span className="logo-text">LinkedIn</span>
               <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-          </p>
+            </p>
+          </a>
 
-          <p className="social-line">
-            <a href="https://twitter.com/GlascockTrevor">
+          <a href="https://twitter.com/GlascockTrevor">
+            <p className="social-line">
               <FontAwesomeIcon icon={faTwitter} />
               <span className="logo-text">Twitter</span>
               <FontAwesomeIcon icon={faTwitter} />
-            </a>
-          </p>
-
-          <p className="social-line">
-            <a href="mailto:TrevorGlascock@gmail.com">
+            </p>
+          </a>
+          <a href="mailto:TrevorGlascock@gmail.com">
+            <p className="social-line">
               <FontAwesomeIcon icon={faEnvelope} />
               <span className="logo-text">Email</span>
               <FontAwesomeIcon icon={faEnvelope} />
@@ -53,8 +52,8 @@ export default function Contact() {
               <span className="logo-sub-text">
                 [ TrevorGlascock@gmail.com ]
               </span>
-            </a>
-          </p>
+            </p>
+          </a>
         </>
       ),
     },

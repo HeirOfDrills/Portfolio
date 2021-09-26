@@ -14,31 +14,27 @@ export default function About() {
       text: (
         <>
           <p>
-            Greetings! My name is Trevor, though if it tickles your fancy, you
-            may also refer to me as The Glascock! I've been captivated by the
-            world of software development since I was a wee lad, of course back
-            then I was much more interested in the idea of making video games
-            (what games-obsessed kid wasn't?), I've since come to greatly enjoy
-            the world of Web Development and Software Engineering.
+            Between my educational background in Java, my occupational
+            experience in Sales & Customer Service, and the practical
+            application of my skillset demonstrated in my deployed Full-Stack
+            Web Applications, I believe I would be an invaluable asset to any
+            Software Engineering team, and am actively seeking Full-Time
+            Employment opportunities with tech companies in the Houston area.
           </p>
           <p>
-            Despite my immense interest in the tech world, I'm an incredibly
-            outgoing and social kind of guy! I've always been the kid to make
-            friends fast, and when I get the chance to socialize my mouth tends
-            to move at a mile a minute! I utilized these personable aspects of
-            myself to kick off my early career as both a Bartender and a
-            Salesman. Although I excelled in these fields, ultimately I felt
-            unfulfilled not following my dreams in Web Development.
+            I am a passionate Engineer who values challenging problems, Test
+            Driven Development Principals, and a collaborative team above all
+            else. My primary focus with Software Engineering lies in: Full-Stack
+            Web-Development, Mobile App Development, Algorithmic Optimizations,
+            Java, JavaScript, Node.js, React, Express.js, PostgreSQL, JQuery,
+            HTML5, and CSS3.
           </p>
           <p>
-            My primary focus lies with Software Engineering, Full-Stack
-            Web-Development, Mobile App Development, JavaScript, Node.js, React,
-            Express.js, PostgreSQL, JQuery, HTML5, and CSS3.
+            I also have familiarity with C++, Lua, Adobe Photoshop, Adobe
+            Illustrator, and Adobe Animate. I am ever eager to acquire more
+            skills whenever provided with the opportunity.
           </p>
-          <p>
-            I also have familiarity with Java, C++, Lua, Adobe Photoshop, Adobe
-            Illustrator, and Adobe Animate.
-          </p>
+
           <hr />
           <p>
             Please feel free to navigate to my{" "}
@@ -46,8 +42,8 @@ export default function About() {
             work.
           </p>
           <p>
-            Alternatively, mosey on over to my{" "}
-            <Link to="/contact">Contact</Link> page if you wish to reach me!
+            Alternatively, you may direct yourself to my{" "}
+            <Link to="/contact">Contact</Link> page if you wish to reach me directly.
           </p>
         </>
       ),

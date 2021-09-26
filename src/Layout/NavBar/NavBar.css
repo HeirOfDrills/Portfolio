@@ -58,11 +58,11 @@ footer {
 
 /*-------------------- Media Breakpoints --------------------*/
 /*--- Tablet size ---*/
-@media all and (min-width: 700px) {
+@media all and (min-width: 768px) {
   header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 3%;
+    padding: 1rem 5%;
   }
   .title-text {
     font-size: 3.4rem;
@@ -74,15 +74,15 @@ footer {
 }
 
 /*--- Desktop layout ---*/
-@media all and (min-width: 1250px) {
+@media all and (min-width: 1024px) {
   header {
-    padding: 1.25rem 5%;
+    padding: 1.25rem 10%;
   }
 }
 /*--- 2K+ Widths ---*/
-@media all and (min-width: 1570px) {
+@media all and (min-width: 1440px) {
   header {
-    padding: 1.25rem 5%;
+    padding: 1.25rem 15%;
   }
   .title-text {
     font-size: 4.5rem;
@@ -98,7 +98,7 @@ footer {
 /* --- 4K+ Widths --- */
 @media all and (min-width: 2560px) {
   header {
-    padding: 1.5rem 5%;
+    padding: 1.5rem 20%;
   }
   .title-text {
     font-size: 5rem;
