@@ -38,7 +38,7 @@
 }
 
 .info-text {
-  padding: 0 0.5rem;
+  padding: 0.5rem;
   text-align: center;
   align-self: center;
 }
@@ -77,27 +77,13 @@
 
 /*-------------------- Media Breakpoints --------------------*/
 /*--- Tablet Layout ---*/
-/* TODO: Make this layout a two column version of the mobile view*/
-@media all and (min-width: 700px) {
-  .info-card {
-    margin: 0 10% 5% 10%;
-  }
-
-  .deploy-wrap:active .deploy-screen {
-    background: #e40066a6;
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-/*--- Desktop layout ---*/
-@media all and (min-width: 1250px) {
+@media all and (min-width: 768px) {
   .accent-border {
     border-style: solid;
   }
   .info-card {
     flex-direction: row;
-    margin: 0 10% 4% 10%;
+    margin: 0 5% 5% 5%;
   }
   .info-img {
     border-style: none;
@@ -109,5 +95,8 @@
   .flipped .info-img {
     border-style: none;
     border-left-style: solid;
+  }
+  .info-text {
+    padding: 0;
   }
 }

@@ -58,7 +58,7 @@ footer {
 
 /*-------------------- Media Breakpoints --------------------*/
 /*--- Tablet size ---*/
-@media all and (min-width: 700px) {
+@media all and (min-width: 768px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -80,7 +80,7 @@ footer {
   }
 }
 /*--- 2K+ Widths ---*/
-@media all and (min-width: 1570px) {
+@media all and (min-width: 1440px) {
   header {
     padding: 1.25rem 5%;
   }
