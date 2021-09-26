@@ -1,12 +1,12 @@
 .svg-inline--fa {
-  font-size: 1.25rem;
+  font-size: 6vw;
 }
 .logo-text {
-  font-size: 1.25rem;
-  margin: 0.3rem;
+  font-size: 6vw;
+  margin: 2vw;
 }
 .logo-sub-text {
-  font-size: 0.7rem;
+  font-size: 5vw;
   color: var(--text-color-secondary);
 }
 a:hover .logo-sub-text {
@@ -16,56 +16,65 @@ a:active .logo-sub-text {
   color: var(--contrast-color-primary);
 }
 .social-line {
-  margin: 0rem;
-  margin-bottom: 1rem;
+  margin: 0 2vw 2vw 2vw;
+}
+.social-line:first-child {
+  margin-top: 2vw;
 }
 
 /*-------------------- Media Breakpoints --------------------*/
-/*--- Tablet/Desktop size ---*/
-@media all and (min-width: 700px) {
+/*--- Tablet size ---*/
+@media all and (min-width: 768px) {
   .svg-inline--fa {
-    font-size: 3.5rem;
+    font-size: 6vw;
   }
   .logo-text {
-    font-size: 3.5rem;
-    margin: 0 1.25rem;
+    font-size: 6vw;
+    margin: 0 2.5vw;
   }
   .logo-sub-text {
-    font-size: 1.75rem;
-  }
-  .social-line {
-    margin-bottom: 1.75rem;
+    font-size: 2.5vw;
   }
 }
+
+/*--- Desktop size ---*/
+@media all and (min-width: 1024px) {
+  .svg-inline--fa {
+    font-size: 5vw;
+  }
+  .logo-text {
+    font-size: 5vw;
+    margin: 0 2.5vw;
+  }
+  .logo-sub-text {
+    font-size: 2vw;
+  }
+}
+
 /*--- 2K+ Widths ---*/
-@media all and (min-width: 1570px) {
+@media all and (min-width: 1440px) {
   .svg-inline--fa {
-    font-size: 4rem;
+    font-size: 4.5vw;
   }
   .logo-text {
-    font-size: 4rem;
-    margin: 0 1.5rem;
+    font-size: 4.5vw;
+    margin: 0 2vw;
   }
   .logo-sub-text {
-    font-size: 2rem;
-  }
-  .social-line {
-    margin-bottom: 2rem;
+    font-size: 1.5vw;
   }
 }
+
 /*--- 4K+ Widths ---*/
-@media all and (min-width: 2560) {
+@media all and (min-width: 2560px) {
   .svg-inline--fa {
-    font-size: 6rem;
+    font-size: 3vw;
   }
   .logo-text {
-    font-size: 6rem;
-    margin: 0 1.75rem;
+    font-size: 3vw;
+    margin: 0 1.5vw;
   }
   .logo-sub-text {
-    font-size: 2.5rem;
-  }
-  .social-line {
-    margin-bottom: 2.5rem;
+    font-size: 1vw;
   }
 }
