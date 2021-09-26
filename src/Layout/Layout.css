@@ -17,7 +17,7 @@ body {
   padding: 0;
   font-family: arial, sans-serif;
   font-size: 4.5vw;
-  min-width: fit-content;
+  width: fit-content;
 }
 img {
   width: 100%;
