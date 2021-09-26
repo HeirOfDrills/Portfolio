@@ -1,7 +1,7 @@
 /*---------- About Classes-----------*/
 .accent-border {
   border: var(--accent-color-primary);
-  border-width: 0.4rem;
+  border-width: 0.5rem;
 }
 .info-card {
   display: flex;
@@ -38,7 +38,7 @@
 }
 
 .info-text {
-  padding: 0.5rem;
+  padding: 0.25rem;
   text-align: center;
   align-self: center;
 }
@@ -80,6 +80,7 @@
 @media all and (min-width: 768px) {
   .accent-border {
     border-style: solid;
+    border-width: 1vw;
   }
   .info-card {
     flex-direction: row;
@@ -98,5 +99,32 @@
   }
   .info-text {
     padding: 0;
+  }
+}
+
+/*--- Desktop Layout ---*/
+@media all and (min-width: 1024px) {
+  .info-card {
+    margin: 0 10% 5% 10%;
+  }
+  .accent-border {
+    border-width: 0.7vw;
+  }
+}
+
+/*--- 2K Layout ---*/
+@media all and (min-width: 1440px) {
+  .info-card {
+    margin: 0 15% 4% 15%;
+  }
+  .accent-border {
+    border-width: 0.65rem;
+  }
+}
+
+/*--- 4K Layout ---*/
+@media all and (min-width: 2560px) {
+  .info-card {
+    margin: 0 20% 3% 20%;
   }
 }
