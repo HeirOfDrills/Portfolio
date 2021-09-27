@@ -52,6 +52,7 @@ footer {
   font-family: "Montserrat";
   text-align: center;
   align-self: center;
+  user-select: none;
 }
 .nav-link:visited {
   color: var(--text-color-primary);
