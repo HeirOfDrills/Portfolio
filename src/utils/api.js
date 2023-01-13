@@ -1,6 +1,6 @@
 const API_BASE_URL =
   process.env.REACT_APP_API_BASE_URL ||
-  "https://theglascockprojects.herokuapp.com";
+  "https://portfolio-backend-5wca.onrender.com";
 
 // json-server headers
 const headers = new Headers();
