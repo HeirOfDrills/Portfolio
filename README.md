@@ -2,7 +2,7 @@
 This is Trevor Glascock's Prototype portfolio. It is still somewhat of a WIP. [The contents of the Projects in this portfolio are actually being handled entirely by an Express api on the backend.](https://github.com/TrevorGlascock/Portfolio-Backend) The front-end styling still has a few revisions to go through, and the backend also requires more of my portfolio to be logged into the database. 
 
 ## Deployments
-- [Backend Deployment](https://theglascockprojects.herokuapp.com/projects)
+- [Backend Deployment](https://portfolio-backend-5wca.onrender.com/projects)
 - [Frontend Staging Deployment](https://theglascock.herokuapp.com/)
 - [Frontend Production Deployment](https://theglascock.com/)
 
